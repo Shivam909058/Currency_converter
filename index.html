@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- This code sets up the head of the HTML document. It defines the character set and viewport, and links to the stylesheet and Google Fonts. -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter.io</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>Currency Converter</h1>
+            <p>Convert your currency to any other currency</p>
+
+            <h2>From</h2>
+            <input type="number" id="amount" placeholder="Enter Amount">
+            <select name="from" id="from">
+                <option value="USD">United States Dollars (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="GBP">United Kingdom Pounds (GBP)</option>
+                <option value="CAD">Canada Dollars (CAD)</option>
+                <option value="AUD">Australia Dollars (AUD)</option>
+                <option value="JPY">Japan Yen (JPY)</option>
+                <option value="INR">India Rupees (INR)</option>
+                <option value="NZD">New Zealand Dollars (NZD)</option>
+                <option value="CHF">Switzerland Francs (CHF)</option>
+                <option value="ZAR">South Africa Rand (ZAR)</option>
+                <option value="DZD">Algeria Dinars (DZD)</option>
+                <option value="ARS">Argentina Pesos (ARS)</option>
+                <option value="AUD">Australia Dollars (AUD)</option>
+                <option value="BHD">Bahrain Dinars (BHD)</option>
+                <option value="BRL">Brazil Reais (BRL)</option>
+                <option value="BGN">Bulgaria Leva (BGN)</option>
+                <option value="CAD">Canada Dollars (CAD)</option>
+                <option value="CLP">Chile Pesos (CLP)</option>
+                <option value="CNY">China Yuan Renminbi (CNY)</option>
+                <option value="CNY">RMB (CNY)</option>
+                <option value="COP">Colombia Pesos (COP)</option>
+                <option value="CRC">Costa Rica Colones (CRC)</option>
+                <option value="HRK">Croatia Kuna (HRK)</option>
+                <option value="CZK">Czech Republic Koruny (CZK)</option>
+                <option value="DKK">Denmark Kroner (DKK)</option>
+                <option value="DOP">Dominican Republic Pesos (DOP)</option>
+                <option value="EGP">Egypt Pounds (EGP)</option>
+                <option value="EEK">Estonia Krooni (EEK)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="FJD">Fiji Dollars (FJD)</option>
+                <option value="HKD">Hong Kong Dollars (HKD)</option>
+                <option value="HUF">Hungary Forint (HUF)</option>
+                <option value="ISK">Iceland Kronur (ISK)</option>
+                <option value="INR">India Rupees (INR)</option>
+                <option value="IDR">Indonesia Rupiahs (IDR)</option>
+            </select>
+
+            <h2>To</h2>
+            <select name="to" id="to">
+                <option value="USD">United States Dollars (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="GBP">United Kingdom Pounds (GBP)</option>
+                <option value="CAD">Canada Dollars (CAD)</option>
+                <option value="AUD">Australia Dollars (AUD)</option>
+                <option value="JPY">Japan Yen (JPY)</option>
+                <option value="INR">India Rupees (INR)</option>
+                <option value="NZD">New Zealand Dollars (NZD)</option>
+                <option value="CHF">Switzerland Francs (CHF)</option>
+                <option value="ZAR">South Africa Rand (ZAR)</option>
+                <option value="DZD">Algeria Dinars (DZD)</option>
+                <option value="ARS">Argentina Pesos (ARS)</option>
+                <option value="AUD">Australia Dollars (AUD)</option>
+                <option value="BHD">Bahrain Dinars (BHD)</option>
+                <option value="BRL">Brazil Reais (BRL)</option>
+                <option value="BGN">Bulgaria Leva (BGN)</option>
+                <option value="CAD">Canada Dollars (CAD)</option>
+                <option value="CLP">Chile Pesos (CLP)</option>
+                <option value="CNY">China Yuan Renminbi (CNY)</option>
+                <option value="CNY">RMB (CNY)</option>
+                <option value="COP">Colombia Pesos (COP)</option>
+                <option value="CRC">Costa Rica Colones (CRC)</option>
+                <option value="HRK">Croatia Kuna (HRK)</option>
+                <option value="CZK">Czech Republic Koruny (CZK)</option>
+                <option value="DKK">Denmark Kroner (DKK)</option>
+                <option value="DOP">Dominican Republic Pesos (DOP)</option>
+                <option value="EGP">Egypt Pounds (EGP)</option>
+                <option value="EEK">Estonia Krooni (EEK)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="FJD">Fiji Dollars (FJD)</option>
+                <option value="HKD">Hong Kong Dollars (HKD)</option>
+                <option value="HUF">Hungary Forint (HUF)</option>
+                <option value="ISK">Iceland Kronur (ISK)</option>
+                <option value="INR">India Rupees (INR)</option>
+                <option value="IDR">Indonesia Rupiahs (IDR)</option>
+            </select>
+
+            <div class="convert">
+                <button onclick="convert()">Convert</button>
+            </div>
+            
+            <div class="result">
+                <p id="result"></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
